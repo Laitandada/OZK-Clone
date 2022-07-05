@@ -287,6 +287,188 @@ body {
   text-align: center;
   border-radius: 2px;
 }
+.sponsors {
+  text-align: center;
+  width: 100%;
+}
+.sponsor {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+}
+.sponsor img {
+  width: 220px;
+}
+.connection {
+  width: 85%;
+  margin: 1rem auto;
+  display: flex;
+  align-items: center;
+}
+.connect-1 {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  width: 50%;
+}
+.connect-2 {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  width: 50%;
+}
+.connect-1 input {
+  width: 100%;
+  height: 70px;
+  margin-top: 1rem;
+  border: 2px solid darkgrey;
+}
+.connect-1 textarea {
+  width: 100%;
+
+  margin-top: 1rem;
+  border: 2px solid darkgrey;
+}
+.connect-2 img {
+  width: 100%;
+}
+.connect-btn {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  align-items: center;
+  margin-top: 1rem;
+}
+.btn-4 {
+  height: 40px;
+  background-color: #d6003c;
+  color: white;
+  border-radius: 5px;
+  border: none;
+  width: 150px;
+}
+.connect-btn a {
+  color: #d6003c;
+  text-decoration: none;
+}
+.connect-btn a:hover {
+  text-decoration: underline;
+}
+footer {
+  width: 100%;
+  background-color: #eee;
+}
+.footer {
+  width: 95%;
+  margin: 0 auto;
+}
+.footer-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-gap: 10px;
+  justify-content: space-around;
+  align-self: start;
+  width: 100%;
+  margin-top: 2rem;
+}
+.footer-grid p {
+  margin-bottom: 0.4rem;
+  font-size: 0.85rem;
+}
+.logos-1 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.logos-1 svg {
+  height: 32px;
+  margin: 0 0.25rem;
+  width: 32px;
+}
+.logos-2 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.logos-3 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.logos {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  width: 35%;
+  margin: 2rem auto;
+}
+.collapse:not(.show) {
+  display: block;
+}
+.section-login {
+  width: 100%;
+  background-image: url(./img/Login_bg.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  min-height: 800px;
+  padding: 3rem;
+  align-items: center;
+}
+.LoginPage {
+  width: 85%;
+  background-color: #fff;
+
+  margin: 1rem auto;
+  /* padding-top: 1rem;
+  padding-bottom: 1rem; */
+}
+.accordion {
+  display: flex;
+}
+.accordion-item {
+  width: 219px;
+  border: none;
+}
+.accordion-button::after {
+  display: none;
+}
+.LoginPage_LoginNav {
+  display: flex;
+  flex-wrap: wrap;
+  width: 100%;
+}
+.card-1 {
+  background: #fff;
+  border-radius: 4px;
+  display: inline-block;
+  flex: 1 0 25%;
+  font-size: 1.15rem;
+  font-weight: 700;
+  margin: 4px;
+  padding: 3rem;
+  position: relative;
+  text-align: center;
+  text-decoration: none;
+  transition: all 0.15s ease-in-out 0s;
+  color: #d6003c;
+  cursor: pointer;
+}
+.card-1:hover {
+  background-color: #d6003c;
+  color: white;
+}
+.card-1 i {
+  font-size: 3.75rem;
+}
+.card-1 h4 {
+  font-size: 1.15rem;
+  margin-top: 0.85rem;
+}
 
 @media (max-width: 990px) {
   .menu-button-container {
@@ -338,5 +520,35 @@ body {
   }
   .topmost-nav {
     display: none;
+  }
+  .container-flex-2 {
+    display: none;
+  }
+  /* .container-flex-1 {
+    width: 50%;
+  } */
+  .connect-2 {
+    display: none;
+  }
+  .sign-in {
+    display: none;
+  }
+  .container-flex {
+    height: 300px;
+  }
+  .footer-grid {
+    grid-template-columns: 1fr;
+  }
+  .collapse:not(.show) {
+    display: none;
+  }
+  .accordion {
+    display: block;
+  }
+  .accordion-button::after {
+    display: flex;
+  }
+  .banner-text h1 {
+    font-size: 4rem;
   }
 }
